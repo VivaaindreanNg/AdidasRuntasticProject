@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.webapp.adidasruntastic.model.SportsSession;
@@ -26,10 +27,11 @@ import com.webapp.adidasruntastic.service.AdidasRuntasticService;
 public class WebController {
 	
 	private static final String ENDPOINT_ALL_SESSIONS = "/sessions";
-	private static final String ENDPOINT_SESSIONS_GET_BY_ID = "/sessions/{id}";
 	private static final String ENDPOINT_SESSIONS_ADD = "/sessions";
+	private static final String ENDPOINT_SESSIONS_GET_BY_ID = "/sessions/{id}";
 	private static final String ENDPOINT_SESSIONS_DELETE_BY_ID = "/sessions/{id}";
 	private static final String ENDPOINT_SESSIONS_UPDATE_BY_ID = "/sessions/{id}";
+	private static final String ENDPOINT_SESSIONS_FILTER_BY_DISTANCE = "/sessionsFilterDistance";
 	
 	@Autowired
 	private AdidasRuntasticService adidasService;
@@ -60,5 +62,10 @@ public class WebController {
 	public SportsSession updateSession(@PathVariable String id, @RequestBody SportsSession session) 
 			throws IllegalAccessException, InvocationTargetException {
 		return adidasService.updateSession(id, session);
+	}
+	
+	@GetMapping(ENDPOINT_SESSIONS_FILTER_BY_DISTANCE)
+	public List<SportsSession> findByMinimumDistance(@RequestParam Integer distance) {
+		return adidasService.findByMinimumDistance(distance);
 	}
 }

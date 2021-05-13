@@ -3,6 +3,7 @@ package com.webapp.adidasruntastic.service;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.ObjectUtils;
@@ -100,5 +101,22 @@ public class AdidasRuntasticService {
 		//Ensure updating back to the same exact Id
 		toBeUpdated.setId(id);
 		return adidasRepo.save(toBeUpdated);
+	}
+	
+	/**
+	 * Retrieve list of sessions with distance above or equal to input distance
+	 * 
+	 * @param distance Integer Minimum distance (in km)
+	 * @return List<{@link SportsSession}>
+	 */
+	public List<SportsSession> findByMinimumDistance(Integer distance) {
+		//Needed conversion, since distance stored in DB is in form of metres.
+		Integer totalDistance = distance *= 1000;
+		List<SportsSession> sessionList = adidasRepo.findAll();
+		
+		List<SportsSession> result = sessionList.stream()
+												.filter(e -> e.getDistance() >= totalDistance)
+												.collect(Collectors.toList());
+		return result;
 	}
 }
