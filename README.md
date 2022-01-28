@@ -7,9 +7,11 @@ Tech Stacks:
 * Front-end: React JS
 
 
-TO-DO:
+## TO-DO:
 
-[ ] Create Python version of of this project.
-[ ] Upload a sample DB within the repo.
-[ ] Implement front-end React JS.
+* [ ] Create Python version of of this project.
+
+* [ ] Upload a sample DB within the repo.
+
+* [ ] Implement front-end React JS.
 
