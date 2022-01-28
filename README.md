@@ -6,3 +6,10 @@ Tech Stacks:
 * Back-end: Spring-Boot (Maven)
 * Front-end: React JS
 
+
+TO-DO:
+
+[ ] Create Python version of of this project.
+[ ] Upload a sample DB within the repo.
+[ ] Implement front-end React JS.
+
