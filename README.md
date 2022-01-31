@@ -15,3 +15,5 @@ Tech Stacks:
 
 * [ ] Implement front-end React JS.
 
+* [ ] Implement unit testing.
+
