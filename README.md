@@ -9,8 +9,6 @@ Tech Stacks:
 
 ## TO-DO:
 
-* [ ] Create Python version of of this project.
-
 * [ ] Upload a sample DB within the repo.
 
 * [ ] Implement front-end React JS.
