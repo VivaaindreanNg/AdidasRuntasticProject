@@ -15,3 +15,4 @@ Tech Stacks:
 
 * [ ] Implement unit testing.
 
+* [ ] Add instructions on how to clone this repo.
