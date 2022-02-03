@@ -15,4 +15,6 @@ Tech Stacks:
 
 * [ ] Implement unit testing.
 
+* [ ] Optional (Add mvn dependencies like BeanUtils)
+
 * [ ] Add instructions on how to clone this repo.
