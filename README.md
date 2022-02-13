@@ -18,3 +18,5 @@ Tech Stacks:
 * [ ] Optional (Add mvn dependencies like BeanUtils)
 
 * [ ] Add instructions on how to clone this repo.
+
+* [ ] Setup [Github Actions YAML file](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven) for Maven.
