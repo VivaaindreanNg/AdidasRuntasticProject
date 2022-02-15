@@ -22,3 +22,5 @@ Tech Stacks:
 * [ ] Setup [Github Actions YAML file](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven) for Maven.
 
 * [ ] Provide DB file containing sample data.
+
+* [ ] Provide instructions on how to save data from file into MongoDB to enable ORM.
