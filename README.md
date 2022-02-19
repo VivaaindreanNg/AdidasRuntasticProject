@@ -1,4 +1,4 @@
-# AdidasRuntasticProject
+# Adidas Runtastic Project
 A beginner's project on implementing basic CRUD operations via REST API
 
 Tech Stacks:
