@@ -24,3 +24,5 @@ Tech Stacks:
 * [ ] Provide DB file containing sample data.
 
 * [ ] Provide instructions on how to save data from file into MongoDB to enable ORM.
+
+* [ ] Setup [Docker with Spring Boot](https://spring.io/guides/gs/spring-boot-docker/)
